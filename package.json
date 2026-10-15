@@ -1,0 +1,30 @@
+{
+  "name": "@local/dsh-skill-scout",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Finds skills that fit a project, lets the user choose, re-searches on rejection, and archives the outcome locally.",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4",
+    "@deepseek-ai/dsh-skill": "0.2.0-rc.2",
+    "@deepseek-ai/dsh-tools": "0.2.0-rc.2"
+  },
+  "files": [
+    "index.js",
+    "core.js",
+    "cordis.patch.yml",
+    "skills",
+    "locale",
+    "test"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

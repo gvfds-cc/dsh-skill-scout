@@ -1,0 +1,11 @@
+# Bundle patch for @local/dsh-skill-scout.
+#
+# One Host-plane row, so every preset in this profile gets the tool.
+# The `project-skill-scout` workflow skill needs no row of its own: the plugin
+# reads its own SKILL.md and registers it through `ctx.skills.register()`, which
+# lands in the skill registry's global layer.
+- insert:
+    - id: skill-scout
+      name: '@local/dsh-skill-scout'
+      config:
+        minCandidates: 3

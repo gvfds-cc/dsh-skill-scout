@@ -1,0 +1,18 @@
+# npm tarballs produced by `npm pack`
+*.tgz
+
+# test scratch directories (test/core.test.mjs creates and removes these)
+.tmp-archive/
+.tmp-skill-src/
+test/.tmp-*/
+
+# machine-specific throwaway probes
+.probe-*
+test/.probe-*
+
+node_modules/
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp

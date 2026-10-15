@@ -1,0 +1,6 @@
+# Keep the plugin sources LF on every platform; the bundle is plain ESM and
+# YAML, and CRLF churn would show up in every diff for contributors.
+* text=auto eol=lf
+
+# tarballs produced by `npm pack`
+*.tgz binary
