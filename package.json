@@ -20,7 +20,7 @@
     "cordis.patch.yml",
     "skills",
     "locale",
-    "test"
+    "test/core.test.mjs"
   ],
   "dsh": {
     "bundle": {
